@@ -13,7 +13,7 @@ app.use(cors({
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:5173", "https://roycechatappio.netlify.app/"], // Set the same origin for Socket.IO
+        origin: ["http://localhost:5173", "https://roycechatappio.onrender.app/"], // Set the same origin for Socket.IO
         methods: ["GET", "POST"]
     }
 });
