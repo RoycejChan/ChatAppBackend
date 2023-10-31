@@ -6,14 +6,14 @@ const cors = require('cors');
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
-    origin: ["http://localhost:5173", "https://roycechatappio.onrender.app/"], // Allow requests from the frontend
+    origin: ["http://localhost:5173", "https://roycechatappio.onrender.com"], // Allow requests from the frontend
     methods: ["GET", "POST"]
 }));
 
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ["http://localhost:5173", "https://roycechatappio.onrender.app/"], // Set the same origin for Socket.IO
+        origin: ["http://localhost:5173", "https://roycechatappio.onrender.com"], // Set the same origin for Socket.IO
         methods: ["GET", "POST"]
     }
 });
