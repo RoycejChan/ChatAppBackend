@@ -6,7 +6,7 @@ const cors = require('cors');
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: false }));
 app.use(cors({
-    origin: ["http://localhost:5173", "https://roycechatappio.netlify.app/"], // Allow requests from the frontend
+    origin: ["http://localhost:5173", "https://roycechatappio.onrender.app/"], // Allow requests from the frontend
     methods: ["GET", "POST"]
 }));
 
